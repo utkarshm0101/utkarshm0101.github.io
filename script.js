@@ -1,3 +1,21 @@
+// Dark mode toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme preference or default to dark mode
+const currentTheme = localStorage.getItem('theme') || 'dark';
+if (currentTheme === 'light') {
+    body.classList.add('light-mode');
+}
+
+themeToggle.addEventListener('click', function() {
+    body.classList.toggle('light-mode');
+    
+    // Save the preference
+    const theme = body.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', theme);
+});
+
 // PDF Modal functionality
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('pdfModal');

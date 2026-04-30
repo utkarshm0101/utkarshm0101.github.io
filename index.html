@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utkarsh Mandavilli - PCB Design Portfolio</title>
+    <title>Utkarsh Mandavilli - Electrical Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,23 +11,40 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">Utkarsh Mandavilli</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="circuit-background"></div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1>PCB Design Engineer</h1>
-                <p>Specializing in Hardware Design, Signal Integrity, and Power Delivery</p>
+                <h1>Electrical Engineer</h1>
+                <p class="hero-quote">Memento Mori. Memento Vivere.</p>
                 <div class="hero-links">
+                    <a href="Utkarsh%20Mandavilli%20-%20Resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
                     <a href="https://www.linkedin.com/in/utkarsh-mandavilli/" target="_blank" class="btn btn-primary">LinkedIn</a>
                     <a href="https://github.com/utkarshm0101" target="_blank" class="btn btn-primary">GitHub</a>
                     <a href="mailto:utkarshm0101@gmail.com" class="btn btn-primary">Email</a>
@@ -41,14 +58,17 @@
     <section id="about" class="about">
         <div class="wide-container">
             <h2>About Me</h2>
-            <p>I am a junior pursuing a BS & MS degree in Electrical Engineering at the University of Colorado-Boulder, where I continue to develop a wide range of technical and soft skills. I have experience with digital and analog electronics, digital and embedded systems, various coding/scripting languages, manufacturing and circuit design and testing. I work year-round for the NASA Colorado Space Grant Consortium for their project teams as a technical lead where we develop and implement engineering solutions to terrestrial and extra-terrestrial problems. I'm also a dedicated member of the CU Ultimate Frisbee team which competes at the Division 1 Level of college sports.</p>
+            <div class="about-content">
+                <img src="Ut.JPG" alt="Utkarsh Mandavilli" class="about-image">
+                <p>I am a junior pursuing a BS & MS degree in Electrical Engineering at the University of Colorado-Boulder, where I continue to develop a wide range of technical and soft skills. I have experience with digital and analog electronics, digital and embedded systems, various coding/scripting languages, manufacturing and circuit design and testing. I work year-round for the NASA Colorado Space Grant Consortium for their project teams as a technical lead where we develop and implement engineering solutions to terrestrial and extra-terrestrial problems. I'm also a dedicated member of the CU Ultimate Frisbee team which competes at the Division 1 Level of college sports.</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="wide-container">
-            <h2>Laboratory Projects & Custom PCB Boards</h2>
+            <h2>Lab Projects</h2>
             
             <!-- Labs -->
             <div class="projects-grid">
@@ -125,6 +145,14 @@
                     <p>High-performance custom microcontroller board built in Altium Designer, surpassing commercially available alternatives. Integrates USB functionality with an ATMEGA microcontroller with optimized design.</p>
                     <div class="project-links">
                         <a href="Utkarsh%20-%20Board%203%20-%20ECEN%205730.pdf" target="_blank" class="link-btn">View Design</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Board 4</h3>
+                    <p>Advanced PCB design project demonstrating comprehensive application of design principles learned throughout the course. Features optimized signal integrity, power delivery, and thermal management.</p>
+                    <div class="project-links">
+                        <a href="Utkarsh%20-%20Board%204%20-%20ECEN%205730.pdf" target="_blank" class="link-btn">View Design</a>
                     </div>
                 </div>
             </div>
